@@ -1,0 +1,101 @@
+----------------------------------------------------------------------------------------------------------------------------
+                                            ADVANCED WEB TECH NOTES
+----------------------------------------------------------------------------------------------------------------------------
+      __          _________   _   _  ____ _______ ______  _____ 
+     /\ \        / /__   __| | \ | |/ __ \__   __|  ____|/ ____|
+    /  \ \  /\  / /   | |    |  \| | |  | | | |  | |__  | (___  
+   / /\ \ \/  \/ /    | |    | . ` | |  | | | |  |  __|  \___ \ 
+  / ____ \  /\  /     | |    | |\  | |__| | | |  | |____ ____) |
+ /_/    \_\/  \/      |_|    |_| \_|\____/  |_|  |______|_____/ 
+
+
+
+----------------------------------------------------------------------------------------------------------------------------
+                                                CONNECTING AND SETTING UP VM
+----------------------------------------------------------------------------------------------------------------------------
+
+# command to connect to the napier Linux VM
+ssh 40440665@webtech-2324-59.napier.ac.uk
+
+
+# Commands to activate a new virtual environment
+
+- Create new virtual environment (with name test)
+
+virtualenv test
+
+
+- Activate a virtual environment (go into it, swap test for name of virtualenv)
+
+source test/bin/activate
+
+
+- Use pip freeze to check if flask is installed in this virtual environment
+
+pip3 freeze
+
+
+- If flask is not installed, install it (Note capital F for Flask)
+
+pip3 install Flask
+
+- Deactivate a virtualenv
+
+deactivate
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------
+                                                        GIT
+----------------------------------------------------------------------------------------------------------------------------
+
+
+# Github token
+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
+
+
+
+# Git Terminal Commands
+
+- git Clone
+
+git clone https://siwells@github.com/siwells/sandpit.git
+
+
+- git Add (to add everything to a push)
+
+git add .
+
+
+- git Commit (with '-m' option to add a message)
+
+git commit -m "This is a commit message"
+
+
+- git Push
+
+git push
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+
+----------------------------------------------------------------------------------------------------------------------------
+                                                RUN A FLASK APP
+----------------------------------------------------------------------------------------------------------------------------
+
+- Run app called hello on port 8080
+
+flask --app hello run --host=0.0.0.0 --port=8080
+
+
+- Run app with debug mode activated
+
+flask --app hello --debug run --host=0.0.0.0 --port=8080
+
+ 
