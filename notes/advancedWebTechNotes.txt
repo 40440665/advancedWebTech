@@ -54,8 +54,11 @@ deactivate
 ----------------------------------------------------------------------------------------------------------------------------
 
 
-# Github token
+# Github token - local machine
 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
+
+# Github token - napier VM
+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
 
 
 
