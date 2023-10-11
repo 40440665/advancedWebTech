@@ -9,7 +9,7 @@ def index():
     return render_template('index.html')
 
 @app.route('/login/')
-@app.route('login/<message>')
+@app.route('/login/<message>')
 def login(message=None):
     if(message != None):
         flash(message)
