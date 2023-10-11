@@ -23,7 +23,7 @@ def init(app):
         app.config['port'] = config.get("config", "port")
         app.config['url'] = config.get("config", "url")
 	
-	app.config['log_file'] = config.get("logging", "name")
+        app.config['log_file'] = config.get("logging", "name")
         app.config['log_location'] = config.get("logging", "location")
         app.config['log_level'] = config.get("logging", "level")
     except:
@@ -41,7 +41,7 @@ def logs(app):
 init(app)
 logs(app)
 if __name__ == '__main__':
-    init(apps)
+    init(app)
     logs(app)
     app.run(
         host=app.config['ip_address'],
