@@ -27,8 +27,7 @@ virtualenv test
 
 - Activate a virtual environment (go into it, swap test for name of virtualenv)
 
-source test/bin/activate
-
+source test/bin/activates
 
 - Use pip freeze to check if flask is installed in this virtual environment
 
@@ -44,6 +43,7 @@ pip3 install Flask
 deactivate
 
 
+curl -L -o bootstrap.zip https://github.com/twbs/bootstrap/releases/download/v3.3.5/bootstrap-3.3.5-dist.zip
 ----------------------------------------------------------------------------------------------------------------------------
 
 
