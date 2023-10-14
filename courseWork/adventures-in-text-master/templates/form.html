@@ -1,0 +1,67 @@
+{% extends "game_index.html" %}
+
+{% block room_details %}
+    <h3>{{room.name}}</h3>
+    <p>{{room.description}}</p>
+    <h4>Items</h4>
+    <ul>
+    {% if room.objects %}
+        {% for item in room.objects %}
+            <li>{{item.name}}</li>
+        {% endfor %}
+    {% else %}
+        <li>Empty</li>
+    {% endif %}
+    </ul>
+{% endblock room_details %}
+
+{% block inventory_list %}
+        <h4>Inventory</h4>
+        <ul>
+        {% if inventory %}
+            {% for item in inventory %}
+                <li>{{item.id}}</li>
+            {% endfor %}
+        {% else %}
+            <li>Empty</li>
+        {% endif %}
+        </ul>
+{% endblock inventory_list %}
+
+{% block exits %}
+    {% if exits %}
+        <h4>Exits</h4>
+        <ul>
+        {% for item in exits %}
+            <li>{{item}}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+{% endblock exits %}
+
+{% block messages %}
+    {% if message %}
+        <p>{{message}}</p>
+    {% endif %}
+{% endblock messages %}
+
+{% block action_form %}
+    <div id="action_input">
+        <label for="action">Action:</label>
+        <input type="text" id="action" name=action autofocus="true"/>
+    </div>
+
+    <div class="submit">
+        <input name="submit" type="submit"/>
+    </div>
+{% endblock action_form %}
+
+{% block flashed_messages %}
+    {% with flash = get_flashed_messages() %}
+        {% if flash %}
+        <ul class=flashes>
+            <li>{{ flash[0]}}</li>
+        </ul>
+        {% endif %}
+    {% endwith %}
+{% endblock flashed_messages %}

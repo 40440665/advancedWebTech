@@ -1,0 +1,81 @@
+.room h3{
+    font-size: 150%;
+}
+.room h4{
+    margin: 0;
+}
+
+.room {
+    width: 80%;
+}
+
+.inventory {
+    float: left;
+    margin: 2em 0 2em 0;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;   
+}
+.inventory h4,ul,li{
+    margin: 0;
+}
+
+.exits {
+    float: left;
+    margin: 2em 0 2em 10%;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;  
+}
+.exits h4,ul,li{
+    margin: 0;
+}
+
+.message {
+    width: 80%;
+    clear: both;
+    font-weight: bold;
+}
+
+.action_form {
+    clear: both;
+    margin: 1em 0 0 0;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+.newgame {
+    float: right;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    width: 200px;
+    text-align: center;
+    margin: 0 50px 0 0;
+}
+
+.newgame a {
+    text-decoration: none;
+    font-size: large;
+}
+
+.flashed-messages {
+    padding-top: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: left;
+    margin-bottom: 1em;
+}
+input {
+    width: 300px;
+    border: 1px solid #999;
+}
+.submit {
+    padding-left: 90px;
+}
