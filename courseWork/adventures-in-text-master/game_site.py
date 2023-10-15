@@ -21,7 +21,7 @@ def teardown_request(exception):
 def get_new_game(user_id=None):
     blank_game = Game()
     if user_id:
-        print "deleting user", user_id
+        print("deleting user", user_id)
     session['id'] = new_game(blank_game, user_id)
     print "creating a new game for user", session['id']
     return redirect(url_for('index'))
