@@ -19,7 +19,7 @@ def close_db_connection(exception):
 
 def init_db():
     with app.app_context():
-        db = get_db
+        db = get_db() 
         with app.open_resource('schema.sql', mode='r') as f:
             db.cursor().executescript(f.read())
         db.commit()
@@ -27,7 +27,7 @@ def init_db():
 @app.route("/")
 def root():
     db = get_db()
-    db.cursor().execute('INSERT into albums values ("American Beauty", "Grateful Dead", "CD")')
+    db.cursor().execute('insert into albums values ("American Beauty", "Grateful Dead", "CD")')
     db.commit()
 
     page = []
@@ -38,8 +38,8 @@ def root():
         page.append(str(row))
         page.append('</li>')
 
-    page.append('</ul></html>')
+    page.append('</ul><html>')
     return ''.join(page)
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', debug=True)
+    app.run(host="0.0.0.0", debug=True)
