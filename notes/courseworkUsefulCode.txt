@@ -1,0 +1,33 @@
+
+GETTING THE LOGIN 
+
+        # if check_auth(request.form['email'], request.form['password', ]):
+        #     session['logged_in'] = True
+        #     return redirect(url_for('.secret'))
+        # return render_template('login.html')
+
+        # validUsername = userCredentials[0]
+        # validPassword = userCredentials[1]
+
+
+        # if check_auth(request.form['username'], request.form['password'], validUsername, validPassword):
+        #     session['logged_in'] = True
+        #     return redirect(url_for('.start'))
+        # else:
+        #     return redirect(url_for('.root'))
+
+        # userCredentials = (db.cursor().execute('SELECT username, hashed_password FROM player WHERE username = ? AND hashed_password = ?',(entUsername, entPassword, ))).fetchone()
+
+        # return render_template('index.html', entUsername=entUsername, expectedUsername=expUsername, entPassword=entPassword, expectedPassword=expPassword)
+
+
+
+
+
+<html>
+<head>
+    <p1>{{ entUsername }}={{ expectedUsername }} <p1>
+    <p1>{{ entPassword }}={{ expectedPassword }} <p1>                
+</head>
+</html>
+
