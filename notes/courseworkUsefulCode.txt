@@ -28,6 +28,53 @@ GETTING THE LOGIN
 <head>
     <p1>{{ entUsername }}={{ expectedUsername }} <p1>
     <p1>{{ entPassword }}={{ expectedPassword }} <p1>                
+
 </head>
 </html>
 
+
+
+
+<html>
+<head>
+</head>
+<body>
+
+    <form name="login-form" action="" method="post">
+
+    <input type="text" placeholder="Username" name="username">
+    <input type="password" placeholder="Password" name="password">
+    <button type="submit" class="btn" name="button" value="login">
+        Sign In
+    </button>
+
+</form>
+
+</body>
+</html>
+
+
+
+
+<html>
+<head>
+</head>
+<body>
+
+    <form name="create-account-form" action="" method="post">
+
+        <input type="text" id= 'username' placeholder="Username" name="username">
+        <input type="password" id='password' placeholder="Password" name="password">
+        <button type="submit" class="btn" name="button" value="create-account">
+            Create Account
+        </button>
+
+    </form>
+
+</body>
+</html>
+
+
+            <a href="login"> <h1>Continue Game</a></h1>
+            <a href="login"> <h1>New Game</a></h1> 
+            <a href="about"> <h1>Settings</a></h1> 
