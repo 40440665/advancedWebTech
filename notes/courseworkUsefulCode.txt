@@ -78,3 +78,8 @@ GETTING THE LOGIN
             <a href="login"> <h1>Continue Game</a></h1>
             <a href="login"> <h1>New Game</a></h1> 
             <a href="about"> <h1>Settings</a></h1> 
+
+                <!-- <label class="radio-inline"> <input type="radio" name="season" id="seasonSummer" value="summer"> Summer </label>
+                <label class="radio-inline"> <input type="radio" name="season" id="seasonWinter" value="winter"> Winter </label>
+                <label class="radio-inline"> <input type="radio" name="season" id="seasonSpring" value="spring"> Spring </label>
+                <label class="radio-inline"> <input type="radio" name="season" id="seasonFall" value="fall"> Fall </label> -->
