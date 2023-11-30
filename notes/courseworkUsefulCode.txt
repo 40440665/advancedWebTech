@@ -83,3 +83,65 @@ GETTING THE LOGIN
                 <label class="radio-inline"> <input type="radio" name="season" id="seasonWinter" value="winter"> Winter </label>
                 <label class="radio-inline"> <input type="radio" name="season" id="seasonSpring" value="spring"> Spring </label>
                 <label class="radio-inline"> <input type="radio" name="season" id="seasonFall" value="fall"> Fall </label> -->
+
+
+
+
+
+
+                      <!-- onkeypress="updateOutput(event)" -->
+    <!-- <script>
+        // Initialize the output text field with initial text
+        const outputText = document.getElementById('level-output');
+        outputText.value = '{{ initial_scenario_text }}';
+
+        function updateOutput(event) {
+            if (event.keyCode === 13) { // Enter key pressed
+                const userInput = document.getElementById('level-input').value;
+
+                let reaction;
+                if (userInput === '1') {
+                    reaction = 'Hello\n\n';
+                } else if (userInput === '2') {
+                    reaction = 'Goodbye\n\n';
+                } else {
+                    reaction = 'Invalid input\n';
+                }
+
+
+
+                outputText.value += reaction;
+
+                // Scroll to the bottom of the output textarea
+                outputText.scrollTop = outputText.scrollHeight;
+
+                document.getElementById('level-input').value = '';
+            }
+        }
+    </script> -->
+    <!-- <script>
+      document.getElementById('userInput').addEventListener('keypress', function(event) {
+        if (event.keyCode === 13) { // Enter key pressed
+          document.getElementById('myForm').submit(); // Submit the form
+        }
+      });
+    </script>     -->
+
+
+
+        # level_difficulty = level_data[1]
+    # initial_level_text = level_data[2]
+    # initial_persuade_dialog = level_data[3]
+    # persuade_dialog_c1 = level_data[4]
+    # persuade_dialog_c2 = level_data[5]
+    # persuade_dialog_c2 = level_data[5]
+    # persuade_dialog_c2 = level_data[5]
+    # persuade_dialog_c2 = level_data[5]
+    # persuade_dialog_c2 = level_data[5]
+    # persuade_dialog_c2 = level_data[5]
+    # persuade_dialog_c2 = level_data[5]
+    # persuade_dialog_c2 = level_data[5]
+    # persuade_dialog_c2 = level_data[5]
+
+    # selection = request.form['userInput']
+    # return selection

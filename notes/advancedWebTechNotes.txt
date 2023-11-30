@@ -104,73 +104,48 @@ flask --app hello --debug run --host=0.0.0.0 --port=8080
  
 3pm Friday 1st
 
- - Report
-      - Section on Changes from initial design
-      - Section on future expansion
+- Section on Changes from initial design
+      
+- Section on future expansion
+      
       - Section on reflection
+      
       - Maybe references
 
-- Screencast of site
+      - Screencast of site
 
 - Source Code
-      - Neaten code up
-      - Work out comments in all files
       - Sort out CSS and HTML
+
       - Zip Repo
+
       - Deployment of actual site
-      - INPUT VALIDATION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! USE PREPERAED STATEMENTS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-– Actual development of site
-      
-      - Pages
-            - Add Content to About page and make available in start
-            - Character Page
+      - Levels Pages
+-           - ASCII Art? Or some sort of visualisation 
+Nearly      - Create HTML and CSS
+            - Big Container for the level to be played out in
 
-            - Levels Pages
--                  - ASCII Art? Or some sort of visualisation 
-Nearly                  - Create HTML and CSS
-                        - Big Container for the level to be played out in
-                        - 
+            - Define scenarios and print to container
+DB                - Where will these scenarios be saved, Database? or just hardcoded.
+                  - If in database will need to store:
+YEAH                    - ASCII art/ image id so that the image can be retrieved
+                        - Scenario Text
+                        - Maybe a table for the enemies stats:
+                              - Health
+                              - Attacks
+                              - Speed
+                              - Score if defeated
+                        - Persuasion Trees
 
-                  - Define scenarios and print to container
-DB                        - Where will these scenarios be saved, Database? or just hardcoded.
-                        - If in database will need to store:
-YEAH                              - ASCII art/ image id so that the image can be retrieved
-                              - Scenario Text
-                              - Maybe a table for the enemies stats:
-                                    - Health
-                                    - Attacks
-                                    - Speed
-                                    - Score if defeated
-                              - Persuasion Trees
-
-                  - Take input from the user
- Text Box                       - Decide on what is being inputted, is it a text box or buttons or selection
-                        - Work out how to convert thus input into an output, will this just remove the previous text or create a scrollable element
+            - Take input from the user
+ Text Box         - Decide on what is being inputted, is it a text box or buttons or selection
+                  - Work out how to convert thus input into an output, will this just remove the previous text or create a scrollable element
                   
-                  - Run Feature
-                        - SQL to get values of enemy 
-                        - Do comparison between players character and enemy
+            - Run Feature
+                  - SQL to get values of enemy 
+                  - Do comparison between players character and enemy
 
-                  - Fight Feature
-                        - SQL to get values of enemy 
-                        - Do comparison between players character and enemy
-                  - 
-            
-            - You Win Page
-                  - Leaderboard of Scores
-                        - SQL to make this happen
-                        - Comparison to show whos 1st, 2nd, 3rd etc
-                  
-                  - Some Animation or ascii art to congratulate the player
-                  - Buttons to take them back to start page
-                  - HTML and CSS for this page
-
-            - Settings Page
-                  - Bootstrap Toggles for different settings
-                  - Once a toggle is changed, maybe have a save settings button that updates the database
-
-            - Character Page
-                  - Add Ranges or maybe
-
-
+            - Fight Feature
+                  - SQL to get values of enemy 
+                  - Do comparison between players character and enemy
